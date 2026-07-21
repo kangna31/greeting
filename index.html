@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Surprise Templates</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        .gradient-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+        }
+        
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+        }
+        
+        .floating {
+            animation: float 3s ease-in-out infinite;
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+        }
+        
+        .pulse-glow {
+            animation: pulseGlow 2s ease-in-out infinite;
+        }
+        
+        @keyframes pulseGlow {
+            0%, 100% { box-shadow: 0 0 20px rgba(102, 126, 234, 0.5); }
+            50% { box-shadow: 0 0 40px rgba(102, 126, 234, 0.8); }
+        }
+    </style>
+</head>
+<body class="gradient-bg min-h-screen">
+    <div class="container mx-auto px-4 py-12">
+        <div class="text-center mb-12">
+            <h1 class="text-5xl font-bold text-white mb-4 floating">🎉 Birthday Surprise Templates</h1>
+            <p class="text-xl text-white/80">Create magical birthday experiences with our animated templates</p>
+        </div>
+        
+        <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+            <!-- Free Version Card -->
+            <div class="bg-white/10 backdrop-blur-lg rounded-2xl p-8 card-hover border border-white/20">
+                <div class="text-center mb-6">
+                    <span class="bg-green-500 text-white px-4 py-1 rounded-full text-sm font-semibold">FREE</span>
+                </div>
+                <h2 class="text-3xl font-bold text-white mb-4 text-center">Basic Template</h2>
+                <ul class="text-white/80 space-y-3 mb-6">
+                    <li class="flex items-center"><span class="mr-2">✨</span> Countdown Timer</li>
+                    <li class="flex items-center"><span class="mr-2">🎊</span> Confetti Effects</li>
+                    <li class="flex items-center"><span class="mr-2">📸</span> Photo Slideshow</li>
+                    <li class="flex items-center"><span class="mr-2">💝</span> Personalized Messages</li>
+                    <li class="flex items-center"><span class="mr-2">🎨</span> Beautiful Animations</li>
+                </ul>
+                <a href="free-template.html" class="block w-full bg-white text-purple-600 font-semibold py-3 rounded-xl text-center hover:bg-purple-50 transition-colors">
+                    Try Free Version
+                </a>
+            </div>
+            
+            <!-- Premium Version Card -->
+            <div class="bg-white/10 backdrop-blur-lg rounded-2xl p-8 card-hover border border-white/20 pulse-glow">
+                <div class="text-center mb-6">
+                    <span class="bg-yellow-500 text-white px-4 py-1 rounded-full text-sm font-semibold">PREMIUM</span>
+                </div>
+                <h2 class="text-3xl font-bold text-white mb-4 text-center">Premium Template</h2>
+                <ul class="text-white/80 space-y-3 mb-6">
+                    <li class="flex items-center"><span class="mr-2">✨</span> Everything in Free</li>
+                    <li class="flex items-center"><span class="mr-2">🎵</span> Background Music</li>
+                    <li class="flex items-center"><span class="mr-2">🎁</span> Surprise Screen</li>
+                    <li class="flex items-center"><span class="mr-2">🌟</span> Advanced Animations</li>
+                    <li class="flex items-center"><span class="mr-2">🎭</span> Multiple Themes</li>
+                </ul>
+                <a href="premium-template.html" class="block w-full bg-gradient-to-r from-yellow-400 to-orange-500 text-white font-semibold py-3 rounded-xl text-center hover:opacity-90 transition-opacity">
+                    Try Premium Version
+                </a>
+            </div>
+        </div>
+        
+        <div class="text-center mt-12">
+            <p class="text-white/60">Choose a template to create an unforgettable birthday surprise!</p>
+        </div>
+    </div>
+</body>
+</html>
